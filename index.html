@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src = "operation.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+<table>
+
+
+    <!--           #######Number Input######          -->
+    <tr>
+        <td colspan = "3"><form><input type="text" name ="input" id="textBox" maxLength="18"></form></td>
+        <td><button class="unClickedButton" onclick="specialButtonClicked(this)">C</button></td>
+    </tr>
+
+
+
+
+    <!--           #######Operator/Operand Buttons######          -->
+    <tr>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >7</button></td>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >8</button></td>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >9</button></td>
+        <td><button class="unClickedButton" onclick="operatorClicked(this)">/</button></td>
+    </tr>
+
+
+
+    <tr>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >4</button></td>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >5</button></td>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >6</button></td>
+        <td><button class="unClickedButton" onclick="operatorClicked(this)">*</button></td>
+    </tr>
+
+
+    <tr>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >1</button></td>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >2</button></td>
+        <td><button class="unClickedButton" onclick="numClicked(this)" >3</button></td>
+        <td><button class="unClickedButton" onclick="operatorClicked(this)">-</button></td>
+    </tr>
+
+
+    <tr>
+        <td><button class="unClickedButton" onclick="specialButtonClicked(this)">.</button></td>
+        <td><button class="unClickedButton" onclick="specialButtonClicked(this)">0</button></td>
+        <td><button class="unClickedButton" onclick="specialButtonClicked(this)">=</button></td>
+        <td><button class="unClickedButton" onclick="specialButtonClicked(this)">+</button></td>
+    </tr>
+
+
+</table>
+</body>
+</html>
