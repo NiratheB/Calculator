@@ -18,7 +18,7 @@ var changeButtonColor = function(button){
     var buttons = document.getElementsByTagName('button');
     for (var i = 0; i< buttons.length; i++)
     {
-        buttons[i].className = "unclickedButton";
+        buttons[i].className = "unClickedButton";
     }
     button.className = "clickedButton";
 }
@@ -155,6 +155,7 @@ var specialButtonClicked = function(button){
             break;
         case "C":
             cancelOperatorClicked();
+            changeButtonColor(button)
             break;
         case "0":
             zeroClicked();
